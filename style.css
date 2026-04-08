@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    max-width: 100%;
+}
+
+#inicio {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+#inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom,
+            rgba(255, 136, 0, 0.4) 0%,
+            rgba(255, 136, 0, 0.2) 30%,
+            rgba(255, 136, 0, 0.1) 60%,
+            rgba(255, 136, 0, 0.05) 80%,
+            transparent 100%);
+}
+
+.texto_principal {
+    margin-top: 100px;
+    width: 60vw;
+}
+
+.texto_principal h1 {
+    color: white;
+    text-align: center;
+    font-size: 65px
+}
+
+.texto_principal_destaque {
+    color: rgba(255, 136, 0, 1);
+}
+
+.subtexto_principal {
+    width: 50vw;
+}
+
+.subtexto_principal p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(100, 100, 100);
+}
+
+.btn_contato {
+    text-decoration: none;
+    width: 450px;
+    height: 70px;
+    border-radius: 100px;
+    background-color: rgba(255, 136, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: black;
+    transition: all 0.2s ease-out;
+}
+
+.btn_contato:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 25px rgba(255, 136, 0, 1);
+}
+
+.medidores {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ROI {
+
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ROI section{
+    display: flex;
+    flex-direction: row;
+}
+
+.DIAS section{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.DIAS {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.medidores h1 {
+    color: rgba(255, 136, 0, 1);
+    font-size: 60px;
+}
+
+.medidores p {
+    color: white;
+    font-size: 18px;
+}
+
+#parceiros {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#parceiros p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.logo_parceiros {
+    width: 100%;
+    gap: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.parceiro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.logos {
+    max-width: 100%;
+}
+
+@media (max-width: 1070px){
+    
+    #inicio{
+        gap: 40px;
+    } 
+    .texto_principal{
+        width: 100vw;
+    }
+
+    .texto_principal h1{
+        font-size: 32.5px;
+    }
+
+    .subtexto_principal{
+        width: 90vw;
+    }
+    .subtexto_principal p{
+        font-size: 15px;
+    }
+
+    .btn_contato{
+         width: 300px;
+         height: 40px;
+         font-size: 12px;
+    }
+}
+
+@media (max-width: 310px){
+    
+    #inicio{
+        gap: 40px;
+    } 
+    .texto_principal{
+        width: 100vw;
+    }
+
+    .texto_principal h1{
+        font-size: 20px;
+    }
+
+    .subtexto_principal{
+        width: 90vw;
+    }
+    .subtexto_principal p{
+        font-size: 10px;
+    }
+
+    .btn_contato{
+         width: 200px;
+         height: 40px;
+         font-size: 12px;
+    }
+}
